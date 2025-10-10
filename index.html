@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Arslan Nasir - Portfolio</title>
+  <style>
+    /* Root Variables for Colors */
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #eaeaea;
+      --primary-color: #00d9ff;
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --shadow-color: rgba(0, 217, 255, 0.3);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid var(--primary-color);
+      box-shadow: 0 0 15px var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0.3rem 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 6px var(--primary-color);
+    }
+
+    /* Section Styling */
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    /* Underline Style */
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 8px rgba(0, 217, 255, 0.7);
+      border-bottom: 2px solid var(--primary-color);
+      display: block;
+      width: fit-content;
+      margin: 0 auto 1.5rem auto;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+
+    .about p {
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    /* Grid Layouts */
+    .skills, .education, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px var(--shadow-color);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 0 25px var(--primary-color);
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 0 15px var(--shadow-color);
+    }
+
+    .contact a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 0 0 6px var(--primary-color);
+    }
+
+    /* Drive Button */
+    .drive-btn {
+      display: inline-block;
+      padding: 0.9rem 2rem;
+      background: var(--primary-color);
+      color: #0d0d0d;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 0 20px var(--primary-color);
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      animation: pulse 2s infinite;
+    }
+
+    .drive-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 35px var(--primary-color);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 15px var(--primary-color); }
+      50% { box-shadow: 0 0 35px var(--primary-color); }
+      100% { box-shadow: 0 0 15px var(--primary-color); }
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      .card {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="D:/ARSLAN/476446910_1137790578038665_2114481675795513990_n.jpg" alt="Arslan Nasir" />
+    <h1>Arslan Nasir</h1>
+    <p>Designer & Editor • Freelancer</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I’m <strong>Arslan Nasir</strong>, a passionate <strong>designer and editor</strong> who loves creating visuals that stand out. 
+      As a freelancer, I specialize in turning raw ideas into polished, eye-catching content. 
+      My work focuses on creativity, precision, and storytelling—whether it’s designing graphics, editing videos, or building engaging digital experiences.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">🎨 Graphic Design</div>
+      <div class="card">✂️ Video Editing</div>
+      <div class="card">📺 YouTube Content Creation</div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section>
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card">🎓 Matric — Block No. 1</div>
+      <div class="card">🎓 Intermediate — Aspire College</div>
+      <div class="card">🎓 Graduate — Riphah International University</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Promotional Video Editing</h3>
+        <p>Editing videos that promote products, services, or brands across multiple platforms.</p>
+      </div>
+      <div class="card">
+        <h3>YouTube Video Editing</h3>
+        <p>Produced engaging video edits for content creators to grow their audience.</p>
+      </div>
+      <div class="card">
+        <h3>Shorts Video Editing</h3>
+        <p>Created engaging short-form videos for YouTube, Instagram, and TikTok to boost views.</p>
+      </div>
+    </div>
+
+    <!-- Drive Button Section -->
+    <div style="text-align: center; margin-top: 2rem;">
+      <h3 style="color: var(--primary-color); text-shadow: 0 0 8px var(--primary-color);">
+        Google Drive
+      </h3>
+      <a href="https://drive.google.com/drive/folders/151NTvx4zjChPuffryATM5fxxPQtGdQPp?usp=drive_link" 
+         target="_blank" 
+         class="drive-btn">Open Drive</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>📩 Email me at: <a href="mailto:nasirarslan720@gmail.com">nasirarslan720@gmail.com</a></p>
+    <p><strong>Let’s work together!</strong></p>
+  </section>
+</body>
+</html>
