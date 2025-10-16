@@ -6,6 +6,40 @@
   <title>Arslan Nasir - Portfolio</title>
   <style>
     /* Root Variables for Colors */
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Floating WhatsApp Button</title>
+  <style>
+    /* Floating Button Style */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50px;
+      padding: 14px 20px;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      background-color: #1ebc57;
+      transform: scale(1.05);
+    }
+
+    .whatsapp-float img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+    
     :root {
       --bg-color: #0d0d0d;
       --text-color: #eaeaea;
@@ -226,9 +260,18 @@
     <h2>Contact</h2>
     <p>📩 Email me at: <a href="mailto:nasirarslan720@gmail.com">nasiralian720@gmail.com</a></p>
     <p><strong>Let’s work together!</strong></p>
+<!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923127409446?text=Hey%20there!%20I%20visited%20your%20website%20and%20want%20to%20connect."
+     class="whatsapp-float"
+     target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    Contact for Editing or Something 😎
+  </a>
+    
   </section>
 </body>
 </html>
+
 
 
 
